@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces and text (SRS 7.2) */
+  --color-canvas: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-ink: #171923;
+  --color-muted: #667085;
+  --color-line: #e6e8ef;
+
+  /* Brand (our adjustment, not the SRS purple) */
+  --color-brand: #23446b;
+  --color-brand-hover: #1b3555;
+  --color-brand-soft: #e8edf4;
+
+  /* Semantic (SRS 7.2) */
+  --color-success: #168a62;
+  --color-warning: #b7791f;
+  --color-danger: #d64545;
+  --color-info: #3273c8;
+
+  /* Font family is wired up in Stage 1b */
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-canvas text-ink font-sans antialiased;
+}
